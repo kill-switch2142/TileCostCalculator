@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/new1"
+    tools:context=".Activity2">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="64dp"
+        android:fontFamily="@font/adamina"
+        android:text=" Enter The Following Details"
+        android:textColor="#cfd616"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="162dp"
+        android:fontFamily="@font/aclonica"
+        android:text="Length"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_marginTop="251dp"
+        android:fontFamily="@font/aclonica"
+        android:text="Breadth"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/length"
+        android:layout_width="182dp"
+        android:layout_height="35dp"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignStart="@+id/breadth"
+        android:background="@android:color/background_light"
+        android:ems="10"
+        android:hint="    in Fts"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/breadth"
+        android:layout_width="185dp"
+        android:layout_height="35dp"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="14dp"
+        android:background="@android:color/background_light"
+        android:ems="10"
+        android:hint="    in fts"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/calculate"
+        android:layout_width="132dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="118dp"
+        android:background="@android:drawable/progress_horizontal"
+        android:text="Proceed"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
